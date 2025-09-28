@@ -1,5 +1,6 @@
 
 # Definimos las funciones (operaciones aritmeticas)
+
 def sumar(a,b) :
     return a + b
 def restar(a,b):
@@ -35,15 +36,11 @@ def calculadora():
         print("El resultado es: ", resultado )
     except ValueError as e:
         print(f"Eror: {e}")
+    print("Reinicie para realizar otra operacion.")
 # Definimos como se ejecuta el programa principal , llamando a la funcion calculadora.
         
 if __name__ == "__main__":
     calculadora()
     
-# Agregando manejo de excepciones :
-    
-try:
-    calculadora()
-finally:
-    print("Reinicie para realizar otra operacion.")
+   
     
